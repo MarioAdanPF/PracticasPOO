@@ -23,10 +23,21 @@ public class PruebaPersonaje{
         Personaje per03 = new Personaje("Emiliano", 1);
         Personaje per04 = new Personaje("Areli", -10);
         Personaje per05 = new Personaje("Eloy", 500);
+        
         per01.getDetalle();
         per02.getDetalle();
         per03.getDetalle();
         per04.getDetalle();
         per05.getDetalle();
+        
+        Personaje per06 = per05;
+        Personaje per07 = per04;
+        Personaje per08 = per03;
+        Personaje per09 = per02;
+        Personaje per10 = per01;
+
+        per06.setNombre("Aratt Esau Juarez Luna");
+        per08.setNombre("Hanna");
+        per10.setNombre("Maria Aide");
     }   
 }
