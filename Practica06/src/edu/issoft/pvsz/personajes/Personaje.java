@@ -3,8 +3,9 @@ public class Personaje {
     private String nombre;
     private int edad;
 
-    public Personaje(String nombre){
+    public Personaje(String nombre, int edad){
         this.nombre = nombre;
+        edad = 0;
     }
     public boolean setNombre(String nombre){
         if(len(nombre) < 20 && len(nombre) > 3){
@@ -30,5 +31,8 @@ public class Personaje {
         }else{
             return false;
         }
+    }
+    public void getDetalle(){
+        System.out.println(nombre + "/t" + edad);
     }
 }
