@@ -1,8 +1,8 @@
 package edu.issoft.pvsz.pruebas;
-import edu.issof.pvsz.personajes.Personaje;
+import edu.issoft.pvsz.personajes.Personaje;
 public class PruebaPersonaje{
     public static void main(String[] args) {
-        Personaje alumno = new Personaje("Kal El");
+        Personaje alumno = new Personaje("Kal El", 0);
         alumno.saludar();
         System.out.println("Nombre: " + alumno.getNombre() + " Edad: " + alumno.getEdad());
         System.out.println("Modificando el nombre " + alumno.getNombre());
@@ -39,5 +39,14 @@ public class PruebaPersonaje{
         per06.setNombre("Aratt Esau Juarez Luna");
         per08.setNombre("Hanna");
         per10.setNombre("Maria Aide");
+        per07.setEdad(13);
+        per09.setEdad(426);
+        System.out.println("---");
+
+        per06.getDetalle();
+        per07.getDetalle();
+        per08.getDetalle();
+        per09.getDetalle();
+        per10.getDetalle();
     }   
 }

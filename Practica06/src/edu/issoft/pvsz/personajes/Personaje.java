@@ -8,9 +8,9 @@ public class Personaje {
         edad = 0;
     }
     public boolean setNombre(String nombre){
-        if(len(nombre) < 20 && len(nombre) > 3){
+        if((nombre.length() < 20) && (nombre.length() > 3)){
+            this.nombre = nombre;
             return true;
-            this.nombre = nombre;   
         }else{
             return false;
         }
