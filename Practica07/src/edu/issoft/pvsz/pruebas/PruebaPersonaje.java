@@ -44,6 +44,8 @@ public class PruebaPersonaje{
                         System.out.println("***Bingo 150***");
                     }
                 }while (per04.setEdad(ed) == False);
+
+                per04.getDetalle();
             }
         }
     }   
