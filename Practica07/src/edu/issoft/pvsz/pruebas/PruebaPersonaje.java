@@ -37,6 +37,13 @@ public class PruebaPersonaje{
                 }else{
                     System.out.println(per03.getNombre() + " " + per03.getEdad() + " sin modificaciones en edad a " + ed);
                 }
+
+                do{
+                    ed = (int) (Math.random() * 250);
+                    if (ed == 150){
+                        System.out.println("***Bingo 150***");
+                    }
+                }while (per04.setEdad(ed) == False);
             }
         }
     }   
