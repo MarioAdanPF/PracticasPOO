@@ -18,21 +18,21 @@ public class PruebaPersonaje{
                 
             for (int i = n; i >= m; i++){
                 ed = (int) (Math.random() * 250);
-                if (per01.setEdad(ed) == True){
+                if (per01.setEdad(ed) == (true)){
                     System.out.println(per01.getNombre() + " " + per01.getEdad() + " se modificó la edad");
                 }else{
                     System.out.println(per01.getNombre() + " " + per01.getEdad() + " sin modificaciones en edad a " + ed);
                 }
 
                 ed = (int) (Math.random() * 250);
-                if (per02.setEdad(ed) == True){
+                if (per02.setEdad(ed) == (true)){
                     System.out.println(per02.getNombre() + " " + per02.getEdad() + " se modificó la edad");
                 }else{
                     System.out.println(per02.getNombre() + " " + per02.getEdad() + " sin modificaciones en edad a " + ed);
                 }
 
                 ed = (int) (Math.random() * 250);
-                if (per03.setEdad(ed) == True){
+                if (per03.setEdad(ed) == (true)){
                     System.out.println(per03.getNombre() + " " + per03.getEdad() + " se modificó la edad");
                 }else{
                     System.out.println(per03.getNombre() + " " + per03.getEdad() + " sin modificaciones en edad a " + ed);
@@ -43,7 +43,7 @@ public class PruebaPersonaje{
                     if (ed == 150){
                         System.out.println("***Bingo 150***");
                     }
-                }while (per04.setEdad(ed) == False);
+                }while (per04.setEdad(ed) == (false));
 
                 per04.getDetalle();
             }
