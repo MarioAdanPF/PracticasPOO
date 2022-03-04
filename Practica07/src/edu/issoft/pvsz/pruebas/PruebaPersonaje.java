@@ -8,6 +8,7 @@ public class PruebaPersonaje{
         Personaje per04 = new Personaje("Antonio");
         
         int ed = (int) (Math.random() * 100);
+        System.out.println(ed);
         int n = 0;
         int m = 0;
         
@@ -16,7 +17,7 @@ public class PruebaPersonaje{
             ed = (int) (Math.random() * 100);
             m = ed;
                 
-            for (int i = n; i >= m; i++){
+            for (int i = n; i <= m; i++){
                 ed = (int) (Math.random() * 250);
                 if (per01.setEdad(ed) == (true)){
                     System.out.println(per01.getNombre() + " " + per01.getEdad() + " se modificó la edad");
@@ -46,6 +47,7 @@ public class PruebaPersonaje{
                 }while (per04.setEdad(ed) == (false));
 
                 per04.getDetalle();
+                System.out.println("");
             }
         }
     }   
