@@ -40,9 +40,31 @@ public class Personaje {
         System.out.println(nombre + "\t" + vida);
     }
     public Void decVida(){
-        this.vida = this.vida - 1;
+        if (this.vida > 0){
+            this.vida = this.vida - 1;
+        }else{
+            System.out.println("La vida ha llegado a 0");
+        }
     }
     public void decVida(int dec){
-        this.vida = this.vida - dec;
+        if (this.vida < dec){
+            this.vida = this.vida - dec;
+        }else{
+            System.out.println("La vida ha llegado a 0 o el número es demasiado grande");
+        }
+    }
+    public Void addVida(){
+        if (this.vida < 99){
+            this.vida = this.vida + 1;
+        }else{
+            System.out.println("La vida ha llegado al límite de 99");
+        }
+    }
+    public void addVida(int add){
+        if (this.vida + add <= 99){
+            this.vida = this.vida + add;
+        }else{
+            System.out.println("No se puede superar el límite de vida de 99");
+        }
     }
 }
