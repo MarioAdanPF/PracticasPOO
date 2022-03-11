@@ -27,5 +27,32 @@ public class Planta{
     public String getDetalle(){
         return super.getDetalle() + escudo;
     }
-    
+    public int decVida(){
+        if (escudo == "A"){
+            return super.decVida() * 2;
+        }else{
+            return super.decVida();
+        }
+    }
+    public int decVida(int dec){
+        if (escudo == "A"){
+            return super.decVida(dec) * 2;
+        }else{
+            return super.decVida(dec);
+        }
+    }
+    public int addVida(){
+        if (escudo == "A"){
+            return super.addVida() * 2;
+        }else{
+            return super.addVida();
+        }
+    }
+    public int addVida(int add){
+        if (escudo == "A"){
+            return super.addVida(add) * 2;
+        }else{
+            return super.addVida(add);
+        }
+    }
 }
