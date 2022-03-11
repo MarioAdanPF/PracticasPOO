@@ -1,26 +1,20 @@
 public class Zombie {
-    String nombre;
-    int vida;
-    boolean ataque;
+    private boolean ataque;
 
     public Zombie(Sting nombre, int vida, boolean ataque){
-        this.nombre = nombre;
-        this.vida = vida;
+        super(nombre, vida);
         this.ataque = ataque;
     }
     public Zombie(Sting nombre, boolean ataque){
-        this.nombre = nombre;
-        this.vida = 3;
+        super(nombre, 3);
         this.ataque = ataque;
     }
     public Zombie(Sting nombre, int vida){
-        this.nombre = nombre;
-        this.vida = vida;
+        super(nombre, vida);
         this.ataque = false;
     }
     public Zombie(Sting nombre){
-        this.nombre = nombre;
-        this.vida = 3;
+        super(nombre, 3);
         this.ataque = false;
     }
 
