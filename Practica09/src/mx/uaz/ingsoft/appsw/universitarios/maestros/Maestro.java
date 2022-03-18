@@ -1,5 +1,4 @@
 package mx.uaz.ingsoft.appsw.universitarios.maestros;
-
 import mx.uaz.ingsoft.appsw.universitarios.Universitario;
 
 public class Maestro extends Universitario{
@@ -18,12 +17,22 @@ public class Maestro extends Universitario{
         if (sueldoEstandar(sueldo) == true){
             this.sueldo = sueldo;
         }else{
-            System.out.println("El sueldo es inválido");
+            this.sueldo = 1000.00f;
         }
     }
 
     public Maestro(String nombre){
         super(nombre);
         this.sueldo = 1000.00f;
+    }
+
+    public boolean equals(Object o){
+        boolean result = false;
+        if ((o != null) && (o instanceof Maestro)){
+            Maestro u = (Maestro) o;
+            if (nombre.equals(u.nombre)){
+
+            }
+        }
     }
 }

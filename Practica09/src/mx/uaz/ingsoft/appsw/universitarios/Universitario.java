@@ -1,6 +1,6 @@
 package mx.uaz.ingsoft.appsw.universitarios;
 public class Universitario{
-    private String nombre;
+    protected String nombre;
 
     public Universitario(String nombre){
         this.nombre = nombre;
