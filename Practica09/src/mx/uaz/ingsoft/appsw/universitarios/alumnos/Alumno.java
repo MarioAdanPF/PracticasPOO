@@ -20,4 +20,30 @@ public class Alumno extends Universitario{
             this.calificacion = 5;
         }
     }
+
+    public Alumno(String nombre){
+        super(nombre);
+        this.calificacion = 5;
+    }
+
+    public boolean equals(Object o){
+        boolean result = false;
+        if ((o != null) && (o instanceof Alumno)){
+            Alumno u = (Alumno) o;
+            if (nombre.equals(u.nombre)){
+                if (calificacion == u.calificacion){
+                    return true;
+                }
+            }
+        }
+        return result;
+    }
+
+    public int hashCode(){
+        return nombre.hashCode() * calificacion;
+    }
+
+    public String toString(){
+        return super.toString() + calificacion;
+    }
 }
