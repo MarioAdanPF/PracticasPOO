@@ -10,7 +10,7 @@ public class Universitario{
         boolean result = false;
         if((o != null) && (o instanceof Universitario)){
             Universitario u = (Universitario) o;
-            if (u.equals(o)){
+            if (nombre.equals(u.nombre)){
                 return true;
             }
         }
