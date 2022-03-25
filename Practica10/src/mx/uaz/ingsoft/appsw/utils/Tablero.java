@@ -20,4 +20,37 @@ public class Tablero {
         System.out.println("******");
     }
 
+    public static void insertar(Universitario u){
+        if ((poss < MAX - 1) && (poss >= -1)){
+            personas[poss + 1] = u;
+            poss++;
+        }else{
+            System.out.println("Imposible insertar en " + poss);
+        }
+    }
+
+    public static void insertar(Universitario u, int idx){
+        if ((idx <= MAX) && (idx > 0)){
+            personas[idx - 1] = u;
+        }else{
+            System.out.println("Imposible insertar en " + idx);
+        }
+    }
+
+    public static void borrar(Universitario u){
+        if ((poss < MAX) && (poss > -1)){
+            personas[poss] = null;
+            poss--;
+        }else{
+            System.out.println("Imposible borrar en " + poss);
+        }
+    }
+
+    public static void borrar(Universitario u, int idx){
+        if ((idx <= MAX) && (idx > 0)){
+            personas[idx - 1] = null;
+        }else{
+            System.out.println("Imposible borrar en " + idx);
+        }
+    }
 }
