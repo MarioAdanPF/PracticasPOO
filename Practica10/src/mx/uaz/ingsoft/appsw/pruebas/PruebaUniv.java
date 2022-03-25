@@ -20,3 +20,9 @@ public class PruebaUniv {
         Tablero.mostrar();
     }
 }
+
+/*A la hora de compilar y ejecutar no tuve ningún error, aunque al principio me estaba marcando
+varios errores por el static que se me había olvidado poner en los métodos, pero cuando solucioné
+eso todo lo demás salió relativamente fácil (aunque me tardé muchísimo, me distraigo muy facilmente
+y cuando menos acuerdo ya perdí mucho tiempo en el celular), por lo demás estuvo sencillo.
+*/

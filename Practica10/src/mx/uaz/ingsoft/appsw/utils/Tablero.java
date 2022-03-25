@@ -25,7 +25,7 @@ public class Tablero {
             personas[poss + 1] = u;
             poss++;
         }else{
-            System.out.println("Imposible insertar en " + poss);
+            System.out.println("Imposible insertar en " + poss + "\n");
         }
     }
 
@@ -33,7 +33,7 @@ public class Tablero {
         if ((idx <= MAX) && (idx > 0)){
             personas[idx - 1] = u;
         }else{
-            System.out.println("Imposible insertar en " + idx);
+            System.out.println("Imposible insertar en " + idx + "\n");
         }
     }
 
@@ -42,7 +42,7 @@ public class Tablero {
             personas[poss] = null;
             poss--;
         }else{
-            System.out.println("Imposible borrar en " + poss);
+            System.out.println("Imposible borrar en " + poss + "\n");
         }
     }
 
@@ -50,7 +50,7 @@ public class Tablero {
         if ((idx <= MAX) && (idx > 0)){
             personas[idx - 1] = null;
         }else{
-            System.out.println("Imposible borrar en " + idx);
+            System.out.println("Imposible borrar en " + idx + "\n");
         }
     }
 }
