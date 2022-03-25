@@ -37,7 +37,7 @@ public class Tablero {
         }
     }
 
-    public static void borrar(Universitario u){
+    public static void borrar(){
         if ((poss < MAX) && (poss > -1)){
             personas[poss] = null;
             poss--;
@@ -46,7 +46,7 @@ public class Tablero {
         }
     }
 
-    public static void borrar(Universitario u, int idx){
+    public static void borrar(int idx){
         if ((idx <= MAX) && (idx > 0)){
             personas[idx - 1] = null;
         }else{
