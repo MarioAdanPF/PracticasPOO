@@ -38,13 +38,16 @@ public class Alumno extends Universitario{
     }
 
     public String toString(){
-        return "Alumno " + super.toString() + " " + promedio;
+        return "Alumno " + super.toString() + " " + getCalificaciones() + getPromedio();
     }
 
-    public void getCalificaciones(){
-        for (int i = 0; i < Tablero.MXC; i++){
-            System.out.print(calificaciones[i] + " ");
+    public int getCalificaciones(){
+        int i = 0;
+        while(i < Tablero.MXC - 1){
+            return calificaciones[i].getCalif();
         }
+        i++;
+        return calificaciones[Tablero.MXC-1].getCalif();
     }
 
     public float getPromedio(){
@@ -60,5 +63,9 @@ public class Alumno extends Universitario{
         for (int i = 0; i < Tablero.MXC; i++){
             calificaciones[i] = Calificacion.CERO;
         }
+    }
+
+    public void setCalif(Calificacion c, int idx){
+        calificaciones[idx] = c;
     }
 }
