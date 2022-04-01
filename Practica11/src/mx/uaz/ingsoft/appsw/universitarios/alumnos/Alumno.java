@@ -38,7 +38,7 @@ public class Alumno extends Universitario{
     }
 
     public String toString(){
-        return "Alumno " + super.toString() + " " + getCalificaciones() + getPromedio();
+        return ("Alumno " + super.toString() + " " + getCalificaciones() + getPromedio());
     }
 
     public int getCalificaciones(){
