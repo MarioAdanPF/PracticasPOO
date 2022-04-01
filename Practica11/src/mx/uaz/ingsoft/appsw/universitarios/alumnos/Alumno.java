@@ -48,7 +48,12 @@ public class Alumno extends Universitario{
     }
 
     public float getPromedio(){
-        
+        int x = 0;
+        for (int i = 0; i < Tablero.MXC; i++){
+            x += calificaciones[i].getCalif();
+        }
+        promedio = x/Tablero.MXC;
+        return promedio;
     }
     
     public void setCalif(){    

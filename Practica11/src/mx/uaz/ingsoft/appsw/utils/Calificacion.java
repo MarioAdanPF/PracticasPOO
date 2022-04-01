@@ -21,5 +21,4 @@ public enum Calificacion{
     public int getCalif(){
         return calif;
     }
-    
 }
