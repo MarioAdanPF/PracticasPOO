@@ -14,3 +14,5 @@ public class PruebaEnum {
         }
     }
 }
+
+//No se ejecuta correctamente y no estoy seguro del por qué, me quedé atorado en esto.
